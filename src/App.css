@@ -1,3 +1,7 @@
+* {
+  font-family: monospace;
+}
+
 .App {
   text-align: center;
 }
@@ -13,26 +17,23 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#modal-screen {
+  z-index: 3;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#deposit-modal {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 90vh;
+  background-color: lightblue;
 }
